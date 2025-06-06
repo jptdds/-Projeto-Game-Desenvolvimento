@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vice Street World - Protótipo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1 data-text="VICE STREET WORLD">VICE STREET WORLD</h1>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            <p class="loading-text">A carregar...</p>
+        </div>
+    </div>
+
+    <div id="prologue" class="hidden">
+        <div class="prologue-content">
+            <h1 data-text="VICE STREET WORLD">VICE STREET WORLD</h1>
+            <p class="typewriter-text">Ano de 1986. Vice City.</p>
+            <p class="typewriter-text">As ruas brilham com luzes de neon enquanto o sol se põe no horizonte.</p>
+            <p class="typewriter-text">Vic Serrano, um motoqueiro com passado conturbado, busca um novo começo...</p>
+            <p class="typewriter-text">...ou talvez apenas mais problemas.</p>
+            <p class="typewriter-text">O caminho que escolher definirá seu destino.</p>
+            <button id="start-game">INICIAR JOGO</button>
+        </div>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <div id="hud">
+            <div class="hud-top">
+                <div class="health-bar">
+                    <div class="health-label">VIDA</div>
+                    <div class="health-bar-container">
+                        <div class="health-bar-fill"></div>
+                    </div>
+                </div>
+                <div class="ammo">
+                    <div class="ammo-label">MUNIÇÃO</div>
+                    <div class="ammo-count">6/6</div>
+                </div>
+            </div>
+            <div class="hud-bottom">
+                <div class="radio">
+                    <div class="radio-label">RÁDIO</div>
+                    <div class="radio-station">VICE FM</div>
+                    <div class="radio-song">Fortunate Song</div>
+                </div>
+                <div class="mission">
+                    <div class="mission-label">MISSÃO</div>
+                    <div class="mission-objective">Encontre a moto e a Magnum .357</div>
+                </div>
+            </div>
+            <div class="crosshair"></div>
+            <div id="interaction-prompt" class="hidden">Pressione E para interagir</div>
+            <div id="dialog-box" class="hidden">
+                <div class="dialog-content">
+                    <div class="dialog-name">NPC</div>
+                    <div class="dialog-text">Texto do diálogo aqui...</div>
+                </div>
+                <div class="dialog-continue">Pressione E para continuar</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-over" class="hidden">
+        <div class="game-over-content">
+            <h1>GAME OVER</h1>
+            <button id="restart-game">RECOMEÇAR</button>
+        </div>
+    </div>
+
+    <!-- Three.js (versão local) -->
+    <script src="libs/three.min.js"></script>
+    <script src="libs/PointerLockControls.js"></script>
+
+    <!-- Scripts do jogo -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/world_fixed.js"></script>
+    <script src="js/player_fixed.js"></script>
+    <script src="js/weapons.js"></script>
+    <script src="js/npc.js"></script>
+    <script src="js/mission.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/radio_system.js"></script>
+    <script src="js/mission_integration.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/compatibility_test.js"></script>
+</body>
+</html>
